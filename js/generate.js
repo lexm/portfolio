@@ -12,10 +12,10 @@ Entry.prototype.toHtml = function() {
   // entryTitle.text(this.sitename);
   var newSiteLink = '<a href="' + this.siteUrl + '">' + this.sitename + '</a>';
   console.log(newSiteLink);
-  $newEntry.find('site').html(newSiteLink);
+  $newEntry.find('h1').html(newSiteLink);
   // $newEntry.find('#site').text(this.sitename);
   // $newEntry.find('#site > a').attr('href, this.siteUrl');
-  $newEntry.find('#site-desc').html(this.description);
+  $newEntry.find('.site-desc').html(this.description);
 
   $newEntry.append('<hr>');
   $newEntry.removeClass('template');
