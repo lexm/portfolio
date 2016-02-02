@@ -20,12 +20,12 @@ Entry.prototype.toHtml = function() {
   $newEntry.append('<hr>');
   $newEntry.removeClass('template');
   return $newEntry;
-}
+};
 
 entryData.forEach(function(ele) {
   entries.push(new Entry(ele));
 });
 
 entries.forEach(function(a) {
-  $('#entries').append(a.toHtml())
+  $('#entries').append(a.toHtml());
 });

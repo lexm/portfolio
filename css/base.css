@@ -1,8 +1,25 @@
+body {
+  padding: 1em;
+}
+
 .main {
   margin: auto;
   width: 75%;
 }
 
+hr {
+  margin: 1em;
+  width: 80%;
+}
+
 .template {
   display: none;
+}
+
+.pull-left {
+  float:left;
+}
+
+.pull-right {
+  float: right;
 }

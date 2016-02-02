@@ -2,7 +2,7 @@ entryData = [
   {
     sitename:        'Kitty Counter',
     siteUrl:      'http://icarrera.github.io/kitty-counter/',
-    description:  '<p>Because I, and my teammates, strongly believe that there are not nearly enough cats on the Internet.</p><p>Meow.</p>'
+    description:  '<p>Because I, and my teammat strongly believe that there are not nearly enough cats on the Internet.</p><p>Meow.</p>'
   },
   {
     sitename:        'Bus Mall',
@@ -19,4 +19,4 @@ entryData = [
     siteUrl:      'http://lexm.github.io/guessing-game',
     description:  '<p>Come true feelings feelings feelings go against headwind or ride on the talewind. he was so wretched in the jungle lands it\'s like a big empty city full of toasters like a ghost town i\'ve found looking for a home ozzy ozzy ozzy ozzy ozzy ozzy ozzy ozzy takin me far the bones of our elders the microphone is in flames upon the funeral fire and sing it again? vietnam vet playin\' air guitar waiting to come down, down on the scene when the fuse is up who shattered themselves.</p>'
   }
-]
+];
