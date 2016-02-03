@@ -16,9 +16,9 @@ entryView.handleMainNav = function() {
     console.log($dataZone);
     $tabZone.hide();
     $tabZone.filter('#' + $dataZone).show();
-  })
-}
+  });
+};
 
 $(function() {
   entryView.handleMainNav();
-})
+});
