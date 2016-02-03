@@ -1,5 +1,15 @@
 body {
   padding: 1em;
+  background-color: #2F1847;
+  /*background-color: #624763;*/
+  /*background-color: #C62E65;*/
+  /*background-color: #F9B3D1;*/
+  /*background-color: #D63AF9;*/
+  /*color: #2F1847;*/
+  /*color: #624763;*/
+  /*color: #C62E65;*/
+  color: #F9B3D1;
+  /*color: #D63AF9;*/
 }
 
 .main {
@@ -10,6 +20,27 @@ body {
 hr {
   margin: 1em;
   width: 80%;
+}
+
+a, a:link, a:active {
+  /*color: #2F1847;*/
+  /*color: #624763;*/
+  /*color: #C62E65;*/
+  /*color: #F9B3D1;*/
+  color: #D63AF9;
+}
+
+h1 {
+  /*color: #2F1847;*/
+  /*color: #624763;*/
+  color: #C62E65;
+  /*color: #F9B3D1;*/
+  /*color: #D63AF9;*/
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
 
 .template {
