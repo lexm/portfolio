@@ -2,7 +2,7 @@ entryData = [
   {
     sitename:        'Kitty Counter',
     siteUrl:      'http://icarrera.github.io/kitty-counter/',
-    description:  '<p>Because I, and my teammat strongly believe that there are not nearly enough cats on the Internet.</p><p>Meow.</p>'
+    description:  '<p>Because I, and my teammates, strongly believe that there are not nearly enough cats on the Internet.</p><p>Meow.</p>'
   },
   {
     sitename:        'Bus Mall',
