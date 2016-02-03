@@ -1,0 +1,9 @@
+.git/**
+css/**
+vendor/**
+.DS_Store
+.eslintignore
+.eslintrc
+.gitignore
+index.html
+README.md
