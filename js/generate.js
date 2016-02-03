@@ -11,7 +11,6 @@ Entry.prototype.toHtml = function() {
   // var entryTitle = $newEntry.find('#site');
   // entryTitle.text(this.sitename);
   var newSiteLink = '<a href="' + this.siteUrl + '">' + this.sitename + '</a>';
-  console.log(newSiteLink);
   $newEntry.find('h1').html(newSiteLink);
   // $newEntry.find('#site').text(this.sitename);
   // $newEntry.find('#site > a').attr('href, this.siteUrl');
