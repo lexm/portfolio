@@ -10,12 +10,12 @@ var entryView = {};
 
 entryView.handleMainNav = function() {
   $('.main-nav .tab').on('click', function() {
-    var $tabContent = $('.tab-content');
-    var $dataContent = $(this).attr('data-content');
-    console.log($tabContent);
-    console.log($dataContent);
-    $tabContent.hide();
-    $tabContent.filter('#' + $dataContent).show();
+    var $tabZone = $('.tab-zone');
+    var $dataZone = $(this).attr('data-zone');
+    console.log($tabZone);
+    console.log($dataZone);
+    $tabZone.hide();
+    $tabZone.filter('#' + $dataZone).show();
   })
 }
 
