@@ -1,3 +1,10 @@
+/*img {
+  max-width: 100%;
+}*/
+
+/* All the extra colors below are for setting up the color scheme,
+   so I can keep adjusting the colors in the Chrome dev tools */
+
 body {
   padding: 1em;
   background-color: #2F1847;
@@ -22,12 +29,10 @@ hr {
   width: 80%;
 }
 
-a, a:link, a:active {
-  /*color: #2F1847;*/
-  /*color: #624763;*/
-  /*color: #C62E65;*/
-  /*color: #F9B3D1;*/
-  color: #D63AF9;
+ /*Text Styles */
+
+p {
+  font-size: 1em;
 }
 
 h1 {
@@ -41,6 +46,16 @@ h1 {
 
 h3 {
   text-align: center;
+}
+
+/* Link Styles */
+
+a, a:link, a:active {
+  /*color: #2F1847;*/
+  /*color: #624763;*/
+  /*color: #C62E65;*/
+  /*color: #F9B3D1;*/
+  color: #D63AF9;
 }
 
 .template {
