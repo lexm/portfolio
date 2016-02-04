@@ -8,12 +8,8 @@ function Entry (opts) {
 
 Entry.prototype.toHtml = function() {
   var $newEntry = $('article.template').clone();
-  // var entryTitle = $newEntry.find('#site');
-  // entryTitle.text(this.sitename);
   var newSiteLink = '<a href="' + this.siteUrl + '">' + this.sitename + '</a>';
   $newEntry.find('h1').html(newSiteLink);
-  // $newEntry.find('#site').text(this.sitename);
-  // $newEntry.find('#site > a').attr('href, this.siteUrl');
   $newEntry.find('.site-desc').html(this.description);
 
   $newEntry.append('<hr>');

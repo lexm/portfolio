@@ -1,15 +1,14 @@
+img {
+  max-width: 100%;
+}
+
+/* All the extra colors below are for setting up the color scheme,
+   so I can keep adjusting the colors in the Chrome dev tools */
+
 body {
   padding: 1em;
-  background-color: #2F1847;
-  /*background-color: #624763;*/
-  /*background-color: #C62E65;*/
-  /*background-color: #F9B3D1;*/
-  /*background-color: #D63AF9;*/
-  /*color: #2F1847;*/
-  /*color: #624763;*/
-  /*color: #C62E65;*/
-  color: #F9B3D1;
-  /*color: #D63AF9;*/
+  background-color: #C3B59F;
+  color: #4A6670;
 }
 
 .main {
@@ -22,20 +21,14 @@ hr {
   width: 80%;
 }
 
-a, a:link, a:active {
-  /*color: #2F1847;*/
-  /*color: #624763;*/
-  /*color: #C62E65;*/
-  /*color: #F9B3D1;*/
-  color: #D63AF9;
+ /*Text Styles */
+
+p {
+  font-size: 1em;
 }
 
-h1 {
-  /*color: #2F1847;*/
-  /*color: #624763;*/
-  color: #C62E65;
-  /*color: #F9B3D1;*/
-  /*color: #D63AF9;*/
+h1, h2 {
+  color: #668F80;
   text-align: center;
 }
 
@@ -43,14 +36,8 @@ h3 {
   text-align: center;
 }
 
-.template {
-  display: none;
-}
+/* Link Styles */
 
-.pull-left {
-  float:left;
-}
-
-.pull-right {
-  float: right;
+a, a:link, a:active {
+  color: #C62E65;
 }

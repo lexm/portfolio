@@ -2,7 +2,7 @@ entryData = [
   {
     sitename:        'Kitty Counter',
     siteUrl:      'http://icarrera.github.io/kitty-counter/',
-    description:  '<p>Because I, and my teammates, strongly believe that there are not nearly enough cats on the Internet.</p><p>Meow.</p>'
+    description:  '<p>Because I, and my teammates, strongly believe that there are not nearly enough cats on the Internet.</p><img src="http://icarrera.github.io/kitty-counter/img/kittyimg2.png" class="pull-right"><p>Meow.</p>'
   },
   {
     sitename:        'Bus Mall',
@@ -12,7 +12,7 @@ entryData = [
   {
     sitename:        'Campfire Coffee',
     siteUrl:      'http://lexm.github.io/campfire-coffee/',
-    description:  '<p>And i shut my mouth before i even breathe and you stare into space trying to discern what to say now give me some sympathy he was only a person i had to set it on fire in vat of chicken fat i\'ll be twisting myself again novacane novacane red tape rivals shoot out all the traffic lights that\'s how long it took the ticker tape feeds the mind two dimensions, dumb your head down where do they go? would this be a world premiere?.</p>'
+    description:  '<p>And i shut my mouth before i even breathe and you stare into space trying to discern what to say now give me some sympathy he was only a person i had to set it on fire in vat of chicken fat i\'ll be twisting myself again novacane novacane red tape rivals shoot out all the traffic lights that\'s how long it took the ticker tape feeds the mind two dimensions, dumb your head down where do they go? <img src="file:///Users/lexmyers/Dev/201d5/week-2/campfire-coffee/img/campfire-coffee.jpg" class="pull-left">would this be a world premiere?.</p>'
   },
   {
     sitename:        'Guessing Game',
