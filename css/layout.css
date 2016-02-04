@@ -15,7 +15,6 @@ nav {
 }
 
 nav li {
-  /*display:block;*/
   justify-content: space-around;
   font-family: 'Old Standard TT', serif;
   margin: 0 5px;
