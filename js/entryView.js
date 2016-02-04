@@ -1,5 +1,7 @@
 var entryView = {};
 
+// This code is here so for when and if I add the select menus
+
 // entryView.populateFilters = function() {
 //   $('article').each(function() {
 //     if(!$(this).hasClass('template')) {
@@ -12,8 +14,6 @@ entryView.handleMainNav = function() {
   $('.main-nav .tab').on('click', function() {
     var $tabZone = $('.tab-zone');
     var $dataZone = $(this).attr('data-zone');
-    console.log($tabZone);
-    console.log($dataZone);
     $tabZone.hide();
     $tabZone.filter('#' + $dataZone).show();
   });
