@@ -1,0 +1,13 @@
+.heading-main {
+  /*float: left;*/
+  padding: 0 0 .2em 1em;
+}
+
+.icon-menu {
+  margin-right: 1em;
+  width: 1.5em;
+}
+
+@media only screen and (min-width:640px) {
+
+}
