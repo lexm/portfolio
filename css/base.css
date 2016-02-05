@@ -24,16 +24,30 @@ hr {
  /*Text Styles */
 
 p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+}
+
+h1, h2, h3 {
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
 }
 
 h1, h2 {
   color: #668F80;
-  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.827em;
 }
 
 h3 {
   text-align: center;
+  font-size: 2em;
 }
 
 /* Link Styles */
