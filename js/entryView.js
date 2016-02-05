@@ -1,6 +1,6 @@
 var entryView = {};
 
-// This code is here so for when and if I add the select menus
+// This code is here for when and if I add the select menus
 
 // entryView.populateFilters = function() {
 //   $('article').each(function() {

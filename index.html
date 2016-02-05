@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio of Lex Myers, Developer</title>
@@ -9,6 +10,18 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
+    <link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <article>
+        <header>
+          <h2><a href="{{siteUrl}}">{{sitename}}</a></h2>
+        </header>
+        <section class="site-desc">{{{description}}}</section>
+      </article>
+    </script>
+
   </head>
   <body>
       <header>
@@ -30,15 +43,9 @@
       </nav>
       <main>
       <section id="entries" class="tab-zone">
-        <article class="template">
-          <header>
-            <h1></h1>
-          </header>
-          <section class="site-desc"></section>
-        </article>
       </section>
       <section id="about" class="tab-zone">
-        <h1>About Lex</h1>
+        <h2>About Lex</h2>
         <p>“Class is dead,” says Sartre. It could be said that Bataille
           promotes the use of predeconstructivist deappropriation to
           modify sexual identity. The main theme of the works of Burroughs
@@ -57,9 +64,12 @@
     <footer>
       <h3>This is a footer, supposedly...</h3>
     </footer>
-    <!-- this is here just so can switch easily from CDN to local jquery -->
+    <!-- these are here just so I can switch easily from CDN to local files.
+         makes coding on the bus possible! -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="vendor/js/jquery-1.12.0.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script> -->
+    <script type="text/javascript" src="vendor/js/handlebars-v4.0.5.js"></script>
     <script type="text/javascript" src="js/entries.js"></script>
     <script type="text/javascript" src="js/generate.js"></script>
     <script type="text/javascript" src="js/entryView.js"></script>

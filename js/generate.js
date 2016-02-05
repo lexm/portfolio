@@ -7,14 +7,8 @@ function Entry (opts) {
 }
 
 Entry.prototype.toHtml = function() {
-  var $newEntry = $('article.template').clone();
-  var newSiteLink = '<a href="' + this.siteUrl + '">' + this.sitename + '</a>';
-  $newEntry.find('h1').html(newSiteLink);
-  $newEntry.find('.site-desc').html(this.description);
-
-  $newEntry.append('<hr>');
-  $newEntry.removeClass('template');
-  return $newEntry;
+  var template = Handlebars.compile($('#entry-template').text());
+  return template(this);
 };
 
 entryData.forEach(function(ele) {
