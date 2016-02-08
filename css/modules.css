@@ -6,6 +6,18 @@
 .icon-menu {
   margin-right: 1em;
   width: 1.5em;
+  float: right;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+main-nav:hover ul {
+  display: block;
 }
 
 @media only screen and (min-width:640px) {
