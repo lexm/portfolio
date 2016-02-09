@@ -16,6 +16,7 @@
 
 nav {
   display: flex;
+  list-style: none;
 }
 
 nav li {
