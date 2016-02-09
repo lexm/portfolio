@@ -28,6 +28,6 @@ entryView.initIndexPage = function() {
   });
 };
 
-// $(function() {
-//   entryView.handleMainNav();
-// });
+$(function() {
+  entryView.handleMainNav();
+});
