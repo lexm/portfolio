@@ -23,7 +23,6 @@ entryView.create = function() {
 
 entryView.initIndexPage = function() {
   Entry.all.forEach(function(a) {
-    console.log('a is ' + a)
     $('#entries').append(a.toHtml());
   });
 };

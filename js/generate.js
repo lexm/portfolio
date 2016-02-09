@@ -14,7 +14,6 @@ Entry.prototype.toHtml = function() {
 };
 
 Entry.loadAll = function(rawData) {
-  console.log('I am here');
   rawData.forEach(function(ele) {
     Entry.all.push(new Entry(ele));
   });
@@ -36,7 +35,6 @@ Entry.fetchAll = function () {
       type: 'HEAD',
       url: 'data/entries.json',
       success: function(data, message, xhr) {
-        console.log(xhr);
         var eTag = xhr.getResponseHeader('eTag');
         if (!localStorage.eTag || eTag !== localStorage.eTag) {
           localStorage.eTag = eTag;
