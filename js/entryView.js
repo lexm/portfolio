@@ -18,10 +18,12 @@ entryView.create = function() {
     description: $('#entry-description').val()
   });
   $('#entries').append(entry.toHtml());
+
 };
 
 entryView.initIndexPage = function() {
   Entry.all.forEach(function(a) {
+    console.log('a is ' + a)
     $('#entries').append(a.toHtml());
   });
 };

@@ -14,13 +14,16 @@ Entry.prototype.toHtml = function() {
 };
 
 Entry.loadAll = function(rawData) {
+  console.log('I am here');
   rawData.forEach(function(ele) {
     Entry.all.push(new Entry(ele));
   });
 };
 
 Entry.getData = function() {
-  $.getJSON('data/entryData.json', function(data) {
+  console.log('where am i');
+  $.getJSON('data/entries.json', function(data) {
+    console.log('data is ' + data);
     localStorage.rawEntryData = JSON.stringify(data);
     Entry.loadAll(data);
     entryView.initIndexPage();
@@ -28,10 +31,10 @@ Entry.getData = function() {
 };
 
 Entry.fetchAll = function () {
-  if(localStorage.entryData) {
+  if(localStorage.rawEntryData) {
     $.ajax({
       type: 'HEAD',
-      url: 'data/entryData.json',
+      url: 'data/entries.json',
       success: function(data, message, xhr) {
         console.log(xhr);
         var eTag = xhr.getResponseHeader('eTag');
@@ -44,6 +47,8 @@ Entry.fetchAll = function () {
         }
       }
     });
+  } else {
+    Entry.getData();
   }
 };
 
@@ -52,3 +57,5 @@ Entry.fetchAll = function () {
 // });
 
 entryView.initIndexPage();
+
+Entry.fetchAll();
