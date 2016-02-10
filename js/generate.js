@@ -22,9 +22,7 @@
   };
 
   Entry.getData = function() {
-    console.log('where am i');
     $.getJSON('data/entries.json', function(data) {
-      console.log('data is ' + data);
       localStorage.rawEntryData = JSON.stringify(data);
       Entry.loadAll(data);
       entryView.initIndexPage();
@@ -53,13 +51,5 @@
     }
   };
   module.Entry = Entry;
-
-  // entries.forEach(function(a) {
-  //   $('#entries').append(a.toHtml());
-  // });
-
-  // entryView.initIndexPage();
-
-  // Entry.fetchAll();
 
 })(window);
