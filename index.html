@@ -71,7 +71,11 @@
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script> -->
     <script type="text/javascript" src="vendor/js/handlebars-v4.0.5.js"></script>
     <script type="text/javascript" src="js/entryView.js"></script>
-    <script type="text/javascript" src="js/entries.js"></script>
     <script type="text/javascript" src="js/generate.js"></script>
+    <!-- <script type="text/javascript" src="js/entries.js"></script> -->
+    <script>
+      Entry.fetchAll();
+      entryView.initIndexPage();
+    </script>
   </body>
 </html>
