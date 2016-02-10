@@ -4,18 +4,14 @@
 
   entryView.handleMainNav = function() {
     $('.main-nav').on('click', '.tab', function() {
-      var $tabZone = $('.tab-zone');
-      var $dataZone = $(this).data('zone');
-      $tabZone.hide();
-      $('#' + $dataZone).fadeIn();
-      // $tabZone.filter('#' + $dataZone).show();
+      $('.tab-zone').hide();
+      $('#' + $(this).data('zone')).fadeIn();
     });
   };
 
   entryView.create = function() {
-    var entry;
     $('#entries').empty();
-    entry = new Entry({
+    var entry = new Entry({
       sitename: $('#entry-sitename').val(),
       siteUrl: $('#entry-siteurl').val(),
       description: $('#entry-description').val()
@@ -28,6 +24,7 @@
     Entry.all.forEach(function(a) {
       $('#entries').append(a.toHtml());
     });
+    $('#count').text(Entry.countWords());
   };
 
   $(function() {
@@ -35,7 +32,5 @@
   });
 
   module.entryView = entryView;
-
-
 
 })(window);

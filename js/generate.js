@@ -16,8 +16,8 @@
   };
 
   Entry.loadAll = function(rawData) {
-    rawData.forEach(function(ele) {
-      Entry.all.push(new Entry(ele));
+    Entry.all = rawData.map(function(ele) {
+      return new Entry(ele);
     });
   };
 
@@ -50,6 +50,18 @@
       inFunc();
     }
   };
+
+  Entry.countWords = function() {
+    return Entry.all.map(function(a) {
+      return a.description.match(/\b\w+/g).length;
+    })
+    .reduce(function(a, b) {
+      return a + b;
+    });
+  };
+
+
+
   module.Entry = Entry;
 
 })(window);
