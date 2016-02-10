@@ -2,9 +2,6 @@ img {
   max-width: 100%;
 }
 
-/* All the extra colors below are for setting up the color scheme,
-   so I can keep adjusting the colors in the Chrome dev tools */
-
 body {
   padding: 1em;
   background-color: #C3B59F;
