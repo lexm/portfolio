@@ -15,12 +15,10 @@
 }
 
 nav {
-  display: flex;
   list-style: none;
 }
 
 nav li {
-  justify-content: space-around;
   font-family: 'Sorts Mill Goudy', serif;
   margin: 0 5px;
 }
