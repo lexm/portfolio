@@ -29,6 +29,6 @@ main-nav:hover ul {
     flex-direction: row;
   }
   .main-nav:hover ul {
-    display: none;
+    /*display: none;*/
   }
 }

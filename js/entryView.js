@@ -1,11 +1,12 @@
 var entryView = {};
 
 entryView.handleMainNav = function() {
-  $('.main-nav .tab').on('click', function() {
+  $('.main-nav').on('click', '.tab', function() {
     var $tabZone = $('.tab-zone');
-    var $dataZone = $(this).attr('data-zone');
+    var $dataZone = $(this).data('zone');
     $tabZone.hide();
-    $tabZone.filter('#' + $dataZone).show();
+    $('#' + $dataZone).fadeIn();
+    // $tabZone.filter('#' + $dataZone).show();
   });
 };
 
