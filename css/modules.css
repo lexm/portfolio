@@ -16,7 +16,7 @@
   clear: both;
 }
 
-main-nav:hover ul {
+.main-nav:hover ul {
   display: block;
 }
 
@@ -25,7 +25,8 @@ main-nav:hover ul {
     display: none;
   }
   .main-nav ul {
-    display: flex;
+    /*display: flex;*/
+    display: block;
     flex-direction: row;
   }
   .main-nav:hover ul {
