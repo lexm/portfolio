@@ -31,7 +31,7 @@
     });
   };
 
-  Entry.fetchAll = function () {
+  Entry.fetchAll = function (inFunc) {
     if(localStorage.rawEntryData) {
       $.ajax({
         type: 'HEAD',
@@ -43,12 +43,13 @@
             Entry.getData();
           } else {
             Entry.loadAll(JSON.parse(localStorage.rawEntryData));
-            entryView.initIndexPage();
+            inFunc();
           }
         }
       });
     } else {
       Entry.getData();
+      inFunc();
     }
   };
   module.Entry = Entry;
