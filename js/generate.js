@@ -37,15 +37,12 @@
         url: 'data/entries.json',
         success: function(data, message, xhr) {
           var eTag = xhr.getResponseHeader('eTag');
-          console.log('1');
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
             localStorage.eTag = eTag;
-            console.log('2');
             Entry.getData();
           } else {
             Entry.loadAll(JSON.parse(localStorage.rawEntryData));
             inFunc();
-            console.log('3');
           }
         }
       });
