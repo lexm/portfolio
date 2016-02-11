@@ -33,8 +33,8 @@
         type: 'HEAD',
         url: 'data/about.json',
         success: function(data, message, xhr) {
-          var aboutETag = xhr.getResponseHeader(eTag);
-          if(!localStorage.aboutETag || eTag != localStorage.aboutETag) {
+          var aboutETag = xhr.getResponseHeader('eTag');
+          if(!localStorage.aboutETag || aboutETag != localStorage.aboutETag) {
             localStorage.aboutETag = aboutETag;
             AboutItem.getData();
           } else {
@@ -47,5 +47,7 @@
       AboutItem.getData();
     }
   };
+
+  module.AboutItem = AboutItem;
 
 })(window);
