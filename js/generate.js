@@ -3,9 +3,9 @@
   var entries = [];
 
   function Entry (opts) {
-    this.sitename = opts.sitename;
-    this.siteUrl = opts.siteUrl;
-    this.description = opts.description;
+    Object.keys(opts).forEach(function(e, index, keys) {
+      this[e] = opts[e];
+    }, this);
   }
 
   Entry.all = [];
@@ -25,6 +25,7 @@
     $.getJSON('data/entries.json', function(data) {
       localStorage.rawEntryData = JSON.stringify(data);
       Entry.loadAll(data);
+      console.log('getData: ' + data);
       entryView.initIndexPage();
     });
   };
@@ -36,18 +37,21 @@
         url: 'data/entries.json',
         success: function(data, message, xhr) {
           var eTag = xhr.getResponseHeader('eTag');
+          console.log('1');
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
             localStorage.eTag = eTag;
+            console.log('2');
             Entry.getData();
           } else {
             Entry.loadAll(JSON.parse(localStorage.rawEntryData));
             inFunc();
+            console.log('3');
           }
         }
       });
     } else {
       Entry.getData();
-      inFunc();
+      console.log('noLS' + Entry.all);
     }
   };
 
