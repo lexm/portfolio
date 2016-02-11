@@ -1,6 +1,6 @@
 (function(module) {
 
-  var entries = [];
+  // var entries = [];
 
   function Entry (opts) {
     Object.keys(opts).forEach(function(e, index, keys) {
@@ -20,6 +20,7 @@
       return new Entry(ele);
     });
   };
+
 
   Entry.getData = function() {
     $.getJSON('data/entries.json', function(data) {
@@ -48,7 +49,6 @@
       });
     } else {
       Entry.getData();
-      console.log('noLS' + Entry.all);
     }
   };
 

@@ -21,10 +21,14 @@
         <section class="site-desc">{{{description}}}</section>
       </article>
     </script>
-    <!-- <script id="footer-template" type="text/x-handlebars-template">
-      <h3>This is a footer, supposedly. There are {{}}</h3>
-    </script> -->
-
+    <script id="about-template" type="text/x-handlebars-template">
+      <article>
+        <header>
+          <h2>{{about-heading}}</h2>
+        </header>
+        <section class="about-text">{{about-content}}</section>
+      </article>
+    </script>
   </head>
   <body>
       <header class="clearfix">
@@ -48,7 +52,7 @@
       <section id="entries" class="tab-zone">
       </section>
       <section id="about" class="tab-zone">
-        <h2>About Lex</h2>
+        <!-- <h2>About Lex</h2>
         <p>“Class is dead,” says Sartre. It could be said that Bataille
           promotes the use of predeconstructivist deappropriation to
           modify sexual identity. The main theme of the works of Burroughs
@@ -61,7 +65,7 @@
         <p>However, the subject is interpolated into a subcultural theory
           that includes reality as a totality. In The Ticket that Exploded,
           Burroughs examines predeconstructivist deappropriation; in Queer,
-          however, he denies neodialectic nationalism.</p>
+          however, he denies neodialectic nationalism.</p> -->
       </section>
     </main>
     <footer>
@@ -70,17 +74,13 @@
          words in the supposed articles on the Portfolio page.
        </h3>
     </footer>
-    <!-- these are here just so I can switch easily from CDN to local files.
-         makes coding on the bus possible! -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="vendor/js/jquery-1.12.0.js"></script>
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script> -->
     <script type="text/javascript" src="vendor/js/handlebars-v4.0.5.js"></script>
     <script type="text/javascript" src="js/entryView.js"></script>
     <script type="text/javascript" src="js/generate.js"></script>
-    <!-- <script type="text/javascript" src="js/entries.js"></script> -->
     <script>
       Entry.fetchAll(entryView.initIndexPage);
+      AboutItem.fetchAll(aboutView.initAboutPage);
     </script>
   </body>
 </html>
