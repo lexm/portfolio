@@ -25,11 +25,7 @@
     display: none;
   }
   .main-nav ul {
-    /*display: flex;*/
     display: block;
     flex-direction: row;
-  }
-  .main-nav:hover ul {
-    /*display: none;*/
   }
 }

@@ -17,7 +17,6 @@
       description: $('#entry-description').val()
     });
     $('#entries').append(entry.toHtml());
-
   };
 
   entryView.initIndexPage = function() {
