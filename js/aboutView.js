@@ -4,7 +4,7 @@
 
   aboutView.initAboutPage = function() {
     AboutItem.all.forEach(function(a) {
-      $('about').append(a.toHtml());
+      $('#about').append(a.toHtml());
     });
   };
 

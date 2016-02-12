@@ -22,7 +22,6 @@
   AboutItem.getData = function() {
     $.getJSON('data/about.json', function(data) {
       localStorage.rawAboutData = JSON.stringify(data);
-      console.log('load1');
       AboutItem.loadAll(data);
       aboutView.initAboutPage();
     });
