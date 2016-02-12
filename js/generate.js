@@ -26,7 +26,6 @@
     $.getJSON('data/entries.json', function(data) {
       localStorage.rawEntryData = JSON.stringify(data);
       Entry.loadAll(data);
-      console.log('getData: ' + data);
       entryView.initIndexPage();
     });
   };
@@ -60,8 +59,6 @@
       return a + b;
     });
   };
-
-
 
   module.Entry = Entry;
 

@@ -9,7 +9,7 @@
   AboutItem.all = [];
 
   AboutItem.prototype.toHtml = function() {
-    var template = Handlebars.compile($('#entry-template').text());
+    var template = Handlebars.compile($('#about-template').text());
     return template(this);
   };
 
@@ -20,8 +20,9 @@
   };
 
   AboutItem.getData = function() {
-    $.getJSON('data/entries.json', function(data) {
+    $.getJSON('data/about.json', function(data) {
       localStorage.rawAboutData = JSON.stringify(data);
+      console.log('load1');
       AboutItem.loadAll(data);
       aboutView.initAboutPage();
     });
@@ -38,6 +39,7 @@
             localStorage.aboutETag = aboutETag;
             AboutItem.getData();
           } else {
+            console.log('load2');
             AboutItem.loadAll(JSON.parse(localStorage.rawAboutData));
             inFunc();
           }
