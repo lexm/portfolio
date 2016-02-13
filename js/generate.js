@@ -1,11 +1,11 @@
 (function(module) {
 
-  var entries = [];
+  // var entries = [];
 
   function Entry (opts) {
-    this.sitename = opts.sitename;
-    this.siteUrl = opts.siteUrl;
-    this.description = opts.description;
+    Object.keys(opts).forEach(function(e, index, keys) {
+      this[e] = opts[e];
+    }, this);
   }
 
   Entry.all = [];
@@ -20,6 +20,7 @@
       return new Entry(ele);
     });
   };
+
 
   Entry.getData = function() {
     $.getJSON('data/entries.json', function(data) {
@@ -47,7 +48,6 @@
       });
     } else {
       Entry.getData();
-      inFunc();
     }
   };
 
@@ -59,8 +59,6 @@
       return a + b;
     });
   };
-
-
 
   module.Entry = Entry;
 
