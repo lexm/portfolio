@@ -26,7 +26,7 @@
     $.getJSON('data/entries.json', function(data) {
       localStorage.rawEntryData = JSON.stringify(data);
       Entry.loadAll(data);
-      entryView.initIndexPage();
+      // entryView.initIndexPage();
     });
   };
 

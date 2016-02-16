@@ -1,7 +1,7 @@
 (function(module) {
   var entryController = {};
 
-  Entry.fetchAll(entryView.initIndexPage);
+  // Entry.fetchAll(entryView.initIndexPage);
 
   entryController.index = function() {
     Entry.fetchAll(entryView.initIndexPage);

@@ -23,7 +23,7 @@
     $.getJSON('data/about.json', function(data) {
       localStorage.rawAboutData = JSON.stringify(data);
       AboutItem.loadAll(data);
-      aboutView.initAboutPage();
+      // aboutView.initAboutPage();
     });
   };
 
