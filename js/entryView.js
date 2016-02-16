@@ -2,13 +2,6 @@
 
   var entryView = {};
 
-  // entryView.handleMainNav = function() {
-  //   $('.main-nav').on('click', '.tab', function() {
-  //     $('.tab-zone').hide();
-  //     $('#' + $(this).data('zone')).fadeIn();
-  //   });
-  // };
-
   entryView.initIndexPage = function() {
     console.log('init index page');
     var $entries = $('#entries');
@@ -18,10 +11,6 @@
     });
     $('#count').text(Entry.countWords());
   };
-
-  // $(function() {
-  //   entryView.handleMainNav();
-  // });
 
   module.entryView = entryView;
 
