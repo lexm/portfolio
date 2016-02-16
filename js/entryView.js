@@ -2,12 +2,12 @@
 
   var entryView = {};
 
-  entryView.handleMainNav = function() {
-    $('.main-nav').on('click', '.tab', function() {
-      $('.tab-zone').hide();
-      $('#' + $(this).data('zone')).fadeIn();
-    });
-  };
+  // entryView.handleMainNav = function() {
+  //   $('.main-nav').on('click', '.tab', function() {
+  //     $('.tab-zone').hide();
+  //     $('#' + $(this).data('zone')).fadeIn();
+  //   });
+  // };
 
   entryView.initIndexPage = function() {
     Entry.all.forEach(function(a) {
@@ -16,9 +16,9 @@
     $('#count').text(Entry.countWords());
   };
 
-  $(function() {
-    entryView.handleMainNav();
-  });
+  // $(function() {
+  //   entryView.handleMainNav();
+  // });
 
   module.entryView = entryView;
 
