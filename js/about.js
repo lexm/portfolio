@@ -38,7 +38,6 @@
             localStorage.aboutETag = aboutETag;
             AboutItem.getData();
           } else {
-            console.log('load2');
             AboutItem.loadAll(JSON.parse(localStorage.rawAboutData));
             inFunc();
           }

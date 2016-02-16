@@ -3,7 +3,6 @@
   var entryView = {};
 
   entryView.initIndexPage = function() {
-    console.log('init index page');
     var $entries = $('#entries');
     $entries.empty();
     Entry.all.forEach(function(a) {
