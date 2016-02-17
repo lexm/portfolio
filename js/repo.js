@@ -17,6 +17,7 @@
 
   repos.with = function(attr) {
     return repos.all.filter(function(repo) {
+      console.log('repo with is' + repo[attr]);
       return repo[attr];
     });
   };

@@ -4,4 +4,5 @@
     $('#gh-repo').show().siblings().hide();
     repos.requestRepos(repoView.index);
   };
+  module.repoController = repoController;
 })(window);
