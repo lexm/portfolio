@@ -35,8 +35,8 @@
         <nav class="main-nav">
           <img src="img/menu.svg" class="icon-menu" alt="Menu">
           <ul>
-            <li class="tab" data-zone="entries"><a href="#" class="icon-briefcase">Portfolio</a></li>
-            <li class="tab" data-zone="about"><a href="#" class="icon-svg">About</a></li>
+            <li class="tab" data-zone="entries"><a href="/" class="icon-briefcase">Portfolio</a></li>
+            <li class="tab" data-zone="about"><a href="/about" class="icon-svg">About</a></li>
             <li><a href="http://github.com/lexm" target="_blank">GitHub</a></li>
             <li><a href="http://twitter.com/lexmyers" target="_blank">Twitter</a></li>
           </ul>
@@ -52,20 +52,6 @@
       <section id="entries" class="tab-zone">
       </section>
       <section id="about" class="tab-zone">
-        <!-- <h2>About Lex</h2>
-        <p>“Class is dead,” says Sartre. It could be said that Bataille
-          promotes the use of predeconstructivist deappropriation to
-          modify sexual identity. The main theme of the works of Burroughs
-          is the economy, and subsequent fatal flaw, of textual class.
-        </p>
-        <p>Therefore, Wilson[4] suggests that we have to choose between
-          neodialectic nationalism and dialectic libertarianism. If
-          expressionism holds, the works of Burroughs are empowering.
-        </p>
-        <p>However, the subject is interpolated into a subcultural theory
-          that includes reality as a totality. In The Ticket that Exploded,
-          Burroughs examines predeconstructivist deappropriation; in Queer,
-          however, he denies neodialectic nationalism.</p> -->
       </section>
     </main>
     <footer>
@@ -74,15 +60,15 @@
          words in the supposed articles on the Portfolio page.
        </h3>
     </footer>
-    <script type="text/javascript" src="vendor/js/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="vendor/js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="vendor/js/handlebars-v4.0.5.js"></script>
-    <script type="text/javascript" src="js/entryView.js"></script>
+    <script type="text/javascript" src="vendor/js/page.js"></script>
     <script type="text/javascript" src="js/generate.js"></script>
-    <script type="text/javascript" src="js/aboutView.js"></script>
+    <script type="text/javascript" src="js/entryView.js"></script>
     <script type="text/javascript" src="js/about.js"></script>
-    <script>
-      Entry.fetchAll(entryView.initIndexPage);
-      AboutItem.fetchAll(aboutView.initAboutPage);
-    </script>
+    <script type="text/javascript" src="js/aboutView.js"></script>
+    <script type="text/javascript" src="js/entryController.js"></script>
+    <script type="text/javascript" src="js/aboutController.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
   </body>
 </html>
