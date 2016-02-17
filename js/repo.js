@@ -3,6 +3,7 @@
   repos.all = [];
 
   repos.requestRepos = function(callback) {
+    // assumes that githubUser and githubToken are defined in githubtoken.js
     $.ajax({
       url: 'https://api.github.com/users/' + githubUser + '/repos?per_page=5&sort=updated',
       type: 'GET',

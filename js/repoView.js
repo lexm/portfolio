@@ -8,11 +8,8 @@
   };
 
   var render = function(repo) {
-    console.log('rendering ' + $('<li>'));
-    // .html('repo name: <a href="' + repo.html_url +
-    //        '">' + repo.full_name + '</a'));
-    return $('<li>')
-      .html('repo name: <a href="' + repo.html_url + '">' + repo.full_name + '</a');
+    return $('<li>').html('repo name: <a href="' + repo.html_url +
+      '">' + repo.full_name + '</a');
   };
 
   repoView.index = function() {
