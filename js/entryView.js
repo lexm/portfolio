@@ -5,8 +5,8 @@
   entryView.initIndexPage = function() {
     var $entries = $('#entries');
     $entries.empty();
-    Entry.all.forEach(function(a) {
-      $entries.append(a.toHtml());
+    Entry.all.forEach(function(article) {
+      $entries.append(article.toHtml());
     });
     $('#count').text(Entry.countWords());
   };
