@@ -29,8 +29,9 @@
   entryView.index = function(entries) {
     $('#entries').show().siblings().hide();
     $('#entries article').remove();
-    articles.forEach(function(art) {
-      $('#articles').append(render(a));
+    entries.forEach(function(art) {
+      console.log(render(art));
+      $('#entries').append(render(art));
     });
     entryView.populateFilters();
     entryView.handleFilters();

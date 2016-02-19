@@ -1,8 +1,11 @@
-page('/', entryController.index);
+page('/',
+  entryController.loadAll,
+  entryController.index);
 page('/about', aboutController.index);
 page('/repos', repoController.index);
 page('/portfolio', '/');
-page('/title/:portEntryName',
+page('/title', '/');
+page('/title/:siteName',
   entryController.loadBySiteName,
   entryController.index);
 page();

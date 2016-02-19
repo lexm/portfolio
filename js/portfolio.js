@@ -52,8 +52,8 @@
   };
 
   Entry.findWhere = function(field, value, callback) {
-    var selectEntry = Entry.all.filter(function() {
-      return (this[field] === value);
+    var selectEntry = Entry.all.filter(function(val, idx, arr) {
+      return (val[field] === value);
     });
     callback(selectEntry);
   };
