@@ -51,6 +51,13 @@
     }
   };
 
+  Entry.findWhere = function(field, value, callback) {
+    var selectEntry = Entry.all.filter(function() {
+      return (this[field] === value);
+    });
+    callback(selectEntry);
+  };
+
   Entry.countWords = function() {
     return Entry.all.map(function(a) {
       return a.description.match(/\b\w+/g).length;
