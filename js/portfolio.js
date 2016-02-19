@@ -1,7 +1,5 @@
 (function(module) {
 
-  // var entries = [];
-
   function Entry (opts) {
     Object.keys(opts).forEach(function(e, index, keys) {
       this[e] = opts[e];
