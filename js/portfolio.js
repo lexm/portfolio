@@ -60,6 +60,12 @@
     });
   };
 
+  Entry.allSiteNames = function() {
+    return Entry.all.map(function(portEntry) {
+      return Entry.sitename;
+    });
+  };
+
   module.Entry = Entry;
 
 })(window);
