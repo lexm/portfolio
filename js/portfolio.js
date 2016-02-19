@@ -62,7 +62,7 @@
 
   Entry.allSiteNames = function() {
     return Entry.all.map(function(portEntry) {
-      return Entry.sitename;
+      return portEntry.sitename;
     });
   };
 

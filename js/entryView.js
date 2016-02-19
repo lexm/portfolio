@@ -4,10 +4,11 @@
 
   entryView.populateFilters = function() {
     var options,
-      template = Handlebars.compile($('#entry-template').text());
-    options = Entry.allSiteNames().map(function(siteName) { return template({val: author}); });
-    if ($('#entry-filter option').length < 2) {
-      $('#entry-filter').append(options);
+      template = Handlebars.compile($('#option-template').text());
+    options = Entry.allSiteNames().map(function(siteName) { return template({val: siteName}); });
+    // options = Entry.allSiteNames().map(function(siteName) { return template({val: siteName}); });    console.log('running popFilter; options is ' + options);
+    if ($('#title-filter option').length < 2) {
+      $('#title-filter').append(options);
     };
   };
 
