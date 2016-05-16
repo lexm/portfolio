@@ -29,7 +29,6 @@
     $('#entries').show().siblings().hide();
     $('#entries article').remove();
     entries.forEach(function(art) {
-      console.log(render(art));
       $('#entries').append(render(art));
     });
     entryView.populateFilters();
