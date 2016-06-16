@@ -3,7 +3,6 @@
   repos.all = [];
 
   repos.requestRepos = function(callback) {
-    // assumes that githubUser and githubToken are defined in githubtoken.js
     $.ajax({
       url: '/github/users/lexm/repos?per_page=100&sort=updated',
       type: 'GET',

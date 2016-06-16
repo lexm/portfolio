@@ -29,6 +29,9 @@
         <section class="about-text">{{{aboutcontent}}}</section>
       </article>
     </script>
+    <script id="option-template" type="text/x-handlebars-template">
+      <option value="{{val}}">{{val}}</option>
+    </script>
   </head>
   <body>
       <header class="clearfix">
@@ -50,6 +53,15 @@
       </header>
       <main>
       <section id="entries" class="tab-zone">
+        <div>
+          <ul id="filters">
+            <select id="title-filter">
+              <li>
+                <option value="">-- Filter by Title --</option>
+              </li>
+            </select>
+          </ul>
+        </div>
       </section>
       <section id="about" class="tab-zone">
       </section>
@@ -70,7 +82,7 @@
     <script type="text/javascript" src="vendor/js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="vendor/js/handlebars-v4.0.5.js"></script>
     <script type="text/javascript" src="vendor/js/page.js"></script>
-    <script type="text/javascript" src="js/generate.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
     <script type="text/javascript" src="js/entryView.js"></script>
     <script type="text/javascript" src="js/about.js"></script>
     <script type="text/javascript" src="js/aboutView.js"></script>

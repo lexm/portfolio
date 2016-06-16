@@ -1,7 +1,5 @@
 (function(module) {
 
-  // var entries = [];
-
   function Entry (opts) {
     Object.keys(opts).forEach(function(e, index, keys) {
       this[e] = opts[e];
@@ -51,12 +49,25 @@
     }
   };
 
+  Entry.findWhere = function(field, value, callback) {
+    var selectEntry = Entry.all.filter(function(val, idx, arr) {
+      return (val[field] === value);
+    });
+    callback(selectEntry);
+  };
+
   Entry.countWords = function() {
     return Entry.all.map(function(a) {
       return a.description.match(/\b\w+/g).length;
     })
     .reduce(function(a, b) {
       return a + b;
+    });
+  };
+
+  Entry.allSiteNames = function() {
+    return Entry.all.map(function(portEntry) {
+      return portEntry.sitename;
     });
   };
 
