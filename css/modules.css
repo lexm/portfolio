@@ -1,11 +1,12 @@
 .heading-main {
-  /*float: left;*/
+  float: left;
   padding: 0 0 .2em 1em;
 }
 
 .icon-menu {
   /*margin-right: 1em;*/
   /*width: 1.5em;*/
+  font-size: 2em;
   float: right;
 }
 
