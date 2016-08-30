@@ -5,7 +5,7 @@
     "description":"<p>A mobile app to generate consistent randomized passwords. Used Ionic, Angular.JS.</p>"
   },
   {
-    "sitename":"Twitter-Bot",
+    "sitename":"Twitter Bot",
     "siteUrl":"https://www.npmjs.com/package/Twitter-bot",
     "description":"<p>An NPM module to facilitate building simple Twitter bots. Used Node.JS, Twitter API, Gulp, Mocha, Chai.</p><p>GitHub: <a href=\"https://github.com/lexm/twitter-bot\">https://github.com/lexm/twitter-bot</a></p>"
   },
