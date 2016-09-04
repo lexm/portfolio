@@ -31,3 +31,7 @@ nav li a {
 ul {
   display: block;
 }
+
+#about, #gh-repo {
+  display: none;
+}
