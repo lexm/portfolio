@@ -6,17 +6,17 @@
   },
   {
     "sitename":"Twitter Bot",
-    "siteUrl":"https://www.npmjs.com/package/Twitter-bot",
+    "siteUrl":"https://www.npmjs.com/package/twitter-bot",
     "description":"<p>An NPM module to facilitate building simple Twitter bots. Used Node.JS, Twitter API, Gulp, Mocha, Chai.</p><p>GitHub: <a href=\"https://github.com/lexm/twitter-bot\">https://github.com/lexm/twitter-bot</a></p>"
   },
   {
     "sitename":"Catpanion",
-    "siteUrl":"https://www.catpanion.com",
-    "description":"A single-page website to locate nearby pet shelters. GitHub: https://github.com/lexm/Catpanion"
+    "siteUrl":"http://www.catpanion.com",
+    "description":"<p>A single-page website to locate nearby pet shelters. GitHub: https://github.com/lexm/Catpanion</p>"
   },
   {
     "sitename":"Kitty Counter",
     "siteUrl":"http://icarrera.github.io/kitty-counter/",
-    "description":"<p>A timed math game where every correct answer earns you a kitty. A Cheezburger fave.</p><div class=\"img-container\"><img src=\"https://icarrera.github.io/kitty-counter/img/kittyimg2.png\" class=\"pull-right\"></div><p>Meow.</p>"
+    "description":"<p>A timed math game where every correct answer earns you a kitty. A Cheezburger fave.</p><div class=\"img-container\"><img src=\"/img/kittyimg2.jpg\" class=\"pull-right\"></div><p>Meow.</p>"
   }
 ]
