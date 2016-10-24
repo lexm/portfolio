@@ -12,11 +12,11 @@
   {
     "sitename":"Catpanion",
     "siteUrl":"http://www.catpanion.com",
-    "description":"<p>A single-page website to locate nearby pet shelters. GitHub: https://github.com/lexm/Catpanion</p>"
+    "description":"<p>A single-page website to locate nearby pet shelters.</p><p>GitHub: <a href=\"https://github.com/lexm/Catpanion\">https://github.com/lexm/Catpanion</a></p>"
   },
   {
     "sitename":"Kitty Counter",
     "siteUrl":"http://icarrera.github.io/kitty-counter/",
-    "description":"<p>A timed math game where every correct answer earns you a kitty. A Cheezburger fave.</p><div class=\"img-container\"><img src=\"/img/kittyimg2.jpg\" class=\"pull-right\"></div><p>Meow.</p>"
+    "description":"<p>A timed math game where every correct answer earns you a kitty. A Cheezburger fave.</p><div class=\"img-container\"><img src=\"img/kittyimg2.jpg\" class=\"pull-right\"></div><p>Meow.</p>"
   }
 ]
